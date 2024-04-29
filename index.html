@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <link rel="icon" href="list.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="list.png" alt="Website icon">
+        <h2><a href="#" target="" rel="">To Do List</a></h2>
+        <!-- <button type="button" title="Change Theme" id="theme-btn" onclick="showTheme()"><i class="fa-regular fa-sun" style="color: #ffffff;"></i></button> -->
+    </div>
+
+    <!-- <div class="theme hidden-theme">
+        <ul>
+            <li class="theme-line"><a href="">Light Theme</a></li>
+            <li><a href="">Dark Theme</a></li>
+        </ul>
+    </div> -->
+
+    <hr class="nav-line">
+
+    <div class="section">
+        <div class="task-func">
+            <input type="text" id="inputText" placeholder="Enter Task Details Here">
+            <input type="date" id="inputDate" title="Click on icon to select date!">
+            <div class="buttons">
+                <button type="button" id="btn1" onclick="addTask()">Add Task <i class="fa-solid fa-plus"></i></button>
+                <button type="button" id="btn2" onclick="searchTask()">Search Task <i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+                <button type="button" id="btn3" onclick="goBack()" title="Go back to complete tasklist"><i class="fa-solid fa-backward"></i></button>
+            </div>
+        </div>
+
+        <div class="tasklist">
+            <h2 id="default">No tasks to display right now... Add Tasks!</h2>
+            <ul id="tasks">
+            </ul>
+        </div>
+
+        <footer>
+            All Rights Reserved |&nbsp;<a href="https://github.com/rohankr2507">github.com/rohankr2507</a>
+        </footer>
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/a7a8986169.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<!-- <li><span id="check"><i class="fa-solid fa-circle-check" style="color: #ffc436;"></i> <i
+    class="fa-regular fa-circle" style="color: #ffc436;"></i></span> <span id="task">Home</span><span id="trash"><i
+    class="fa-solid fa-trash" style="color: #192655;"></i></span></li> -->
